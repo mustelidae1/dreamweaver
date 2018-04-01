@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Olivia Thomas - Portfolio</title>
+  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/vibur:n4:default;annie-use-your-telescope:n4:default;boogaloo:n4:default;voltaire:n4:default;londrina-shadow:n4:default.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+  <body>
+   <script> 
+	  $( document ).ready(function() {
+		  console.log("Got here"); 
+		  alert("Hi"); 
+   		$( "#mybutton" ).trigger( "click" );
+	  });
+	  </script>
+   <!--Navbar --> 
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Olivia Thomas</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link" href="#">
+          Portfolio <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+   <!--End Navbar --> 
+ <div class="portfolio"> 
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('games')"> Games</button>
+  <button class="btn" onclick="filterSelection('music')"> Music</button>
+  <button class="btn" onclick="filterSelection('fiction')"> Stories</button>
+  <button class="btn" onclick="filterSelection('film')"> Film</button>
+  <button class="btn" onclick="filterSelection('educational')"> Educational</button>
+  <button class="btn" onclick="filterSelection('vr')"> VR</button>
+  <button class="btn" onclick="filterSelection('ar')"> AR</button>
+  <button class="btn" onclick="filterSelection('duino')"> Arduino</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+
+<div class="column music">
+    <div class="content" id="soundscape" data-toggle="modal" data-target="#soundscapeModal">
+     <h4>Interactive Song</h4>
+      <img src="media/soundscape.png" alt="Interactive Song Screenshot" style="width:100%">
+      <p>Interactive soundscape that lets you walk around a song.</p>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="soundscapeModal" tabindex="-1" role="dialog" aria-labelledby="soundscapeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="soundscapeModalLabel">Interactive Song</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <iframe name="frame1" src="" style="border:0px #000000 none;" name="soundscape" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="480px"></iframe>
+		  <button class="btn btn-default" style="margin:auto; display:block;"><a href="soundscape/index.html" target="frame1">Play</a></button>
+		  <p> Instructions: Click inside the frame to start and use WASD or arrow keys to move. Press escape when you are done. <br> 
+    		  Date: Fall 2017 <br> 
+    		  Role: Individual project
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column ar">
+    <div class="content" data-toggle="modal" data-target="#nasaModal">
+     <h4>NASA SUITS</h4>
+      <img src="media/nasa.jpg" alt="People" style="width:100%">
+      <p>Augmented reality program for HoloLens that walks astronauts through EVA tasks.</p>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="nasaModal" tabindex="-1" role="dialog" aria-labelledby="nasaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nasaModalLabel">NASA SUITS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+    		  Date: Spring 2018 (still in development) <br> 
+    		  Role: Project lead, wrote proposal, Unity programming
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column educational ar games">
+    <div class="content" data-toggle="modal" data-target="#beaconModal">
+     <h4>Boise State Beacon Project</h4>
+      <img src="media/beacons.PNG" alt="People" style="width:100%">
+      <p>Dashboard for Estimote beacons to be used at Boise State for tutoring services and Bronco Days game</p>
+    </div>
+  </div>
+  
+    <!-- Modal -->
+<div class="modal fade" id="beaconModal" tabindex="-1" role="dialog" aria-labelledby="beaconModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="beaconModalLabel">Boise State Beacon Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+    		  Date: Spring 2018 (still in development) <br> 
+    		  Role: Lead programmer for dashboard, manager of server 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column fiction">
+    <div class="content" data-toggle="modal" data-target="#desertModal">
+      <h4>Song of Dawn Trilogy</h4>
+      <img src="media/books.png" alt="People" style="width:100%; margin:auto; display:block">
+      <p>300 page fantasy trilogy</p>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="desertModal" tabindex="-1" role="dialog" aria-labelledby="desertModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="desertModalLabel">The Desert Trilogy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+			  <a href="https://www.amazon.com/gp/product/B0764FFH28/ref=series_rw_dp_sw" target="_blank" >Available on Kindle</a><br> 
+    		  Date: Written 2015 and 2016 (third book is not available yet) <br> 
+    		  Role: Individual project (also made the covers)
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games">
+    <div class="content" data-toggle="modal" data-target="#tapjackModal">
+     <h4>TapJack</h4>
+      <img src="media/tapjack.png" alt="TapJack Game Screenshot" style="width:100%; margin:auto; display:block">
+      <p>Mobile two-player slapjack game</p>
+    </div>
+  </div>
+  
+   <!-- Modal -->
+<div class="modal fade" id="tapjackModal" tabindex="-1" role="dialog" aria-labelledby="tapjackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tapjackModalLabel">TapJack</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p>  
+    		  Date: 2017-2018 (still in development) <br> 
+    		  Role: Individual project 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column educational">
+    <div class="content" data-toggle="modal" data-target="#qbModal">
+     <h4>Quiz Bowl Scoring Software</h4>
+      <img src="media/quizBowl.PNG" alt="Quiz Bowl Software Screenshot" style="width:100%">
+      <p>Software to help readers keep score during quiz bowl competitions.</p>
+    </div>
+  </div>
+  
+   <!-- Modal -->
+<div class="modal fade" id="qbModal" tabindex="-1" role="dialog" aria-labelledby="qbModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qbModalLabel">Quiz Bowl Scoring Software</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+    		  Date: 2018 (still in development) <br> 
+    		  Role: Interface design and front-end development
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column music film vr">
+    <div class="content" data-toggle="modal" data-target="#museumModal">
+      <h4>The Museum</h4>
+      <img src="media/360film.png" alt="360 Film Screenshot" style="width:100%">
+      <p>Interactive 360 film with original music.</p>
+    </div>
+  </div>
+  
+     <!-- Modal -->
+<div class="modal fade" id="museumModal" tabindex="-1" role="dialog" aria-labelledby="museumModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="museumModalLabel">The Museum</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+    		  Date: Fall 2017 <br> 
+    		  Role: Composition and recording of music, acting, scriptwriting, filming, Unity programming
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column fiction">
+    <div class="content" data-toggle="modal" data-target="#panoramaModal">
+     <h4>Therin, The Key</h4>
+      <img src="media/pano.jpg" alt="360 Panorama Story Screenshot" style="width:100%">
+      <p>360 panorama story created with composited shots</p>
+    </div>
+  </div>
+  
+    <!-- Modal -->
+<div class="modal fade" id="panoramaModal" tabindex="-1" role="dialog" aria-labelledby="panoramaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="panoramaModalLabel">Therin, The Key</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <iframe name="frame2" src="" style="border:0px #000000 none;" name="panorama" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="350px" width="480px"></iframe>
+			  <button class="btn btn-default" style="margin:auto; display:block;"><a href="panorama/index.html" target="frame2">Play</a></button>
+		  <p> Instructions: Click inside the frame to start. Press escape when you are done. <br> 
+    		  Date: Fall 2017 <br> 
+    		  Role: Individual project 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <div class="column duino">
+    <div class="content" data-toggle="modal" data-target="#powerModal">
+     <h4>Power Switch Device</h4>
+      <img src="media/powerSwitch.JPG" alt="Power Switch Device" style="width:100%">
+      <p>Arduino-based device for students with disabilities that controls power flow to appliances with a large button.</p>
+    </div>
+  </div>
+  
+    <!-- Modal -->
+<div class="modal fade" id="powerModal" tabindex="-1" role="dialog" aria-labelledby="powerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="museumModalLabel">Power Switch Device</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <a href="https://sites.google.com/u.boisestate.edu/powerswitch/home" target="_blank">Project Website</a><br> 
+    		  Date: Fall 2017 <br> 
+    		  Role: Programming, schematic creation, project management 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games ar educational">
+    <div class="content" data-toggle="modal" data-target="#frescoModal">
+      <h4>AR Fresco Game</h4>
+      <img src="media/Plaster.PNG" alt="AR Fresco Game" style="width:100%">
+      <p>Augmented reality mobile game that teaches users the process of painting a fresco.</p>
+    </div>
+  </div>
+  
+      <!-- Modal -->
+<div class="modal fade" id="frescoModal" tabindex="-1" role="dialog" aria-labelledby="frescoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="frescoModalLabel">AR Fresco Game</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> 
+    		  Date: Summer 2017 <br> 
+    		  Role: Unity programming 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games">
+    <div class="content" data-toggle="modal" data-target="#colorlessModal">
+     <h4>Colorless</h4>
+      <img src="media/Colorless.png" alt="Colorless Game Screenshot" style="width:100%">
+      <p>Puzzle platformer created with Gamestar Mechanic that won the National STEM Challenge and went to the White House Science Fair</p>
+    </div>
+  </div>
+  
+      <!-- Modal -->
+<div class="modal fade" id="colorlessModal" tabindex="-1" role="dialog" aria-labelledby="colorlessModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="colorlessModalLabel">Colorless</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_477911"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_477911']); _gsm.push(['_game_id', '477911']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_4463270.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837739441&Signature=DJ8tw7dEzi0sgT%2B7OborxHhB78M%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div> <br> 
+		  <a href="http://gamestarmechanic.com/game/shared/477912/5096b129ee811354dd25c894022f4259" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2016 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games music">
+    <div class="content" data-toggle="modal" data-target="#dandelionModal">
+     <h4>Dandelion</h4>
+      <img src="media/dandelion1.png" alt="Dandelion Game Screenshot" style="width:100%">
+      <p>Flash game with interactive music and adaptive gameplay.</p>
+    </div>
+  </div>
+   
+         <!-- Modal -->
+<div class="modal fade" id="dandelionModal" tabindex="-1" role="dialog" aria-labelledby="dandelionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dandelionModalLabel">Dandelion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <embed src="media/Dandelion.swf" width="100%" height="450"> <br> 
+    		  Date: Fall 2016 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  <div class="column games">
+    <div class="content" data-toggle="modal" data-target="#treasurehuntModal">
+     <h4>Treasure Hunt</h4>
+      <img src="media/TreasureHunt.png" alt="People" style="width:100%">
+      <p>Puzzle adventure game created with GameMaker Studio.</p>
+    </div>
+  </div>
+  
+        <!-- Modal -->
+<div class="modal fade" id="treasurehuntModal" tabindex="-1" role="dialog" aria-labelledby="treasurehuntModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="treasurehuntModalLabel">Treasure Hunt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <a href="https://drive.google.com/file/d/0B9fgCdYJPJSvOFI3Q3FaZHB6Z28/view?usp=sharing">Download Here</a><br> 
+    		  Date: 2015 <br> 
+    		  Role: Individual Project 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games fiction">
+    <div class="content" data-toggle="modal" data-target="#pencilModal">
+     <h4>The PencilMeister</h4>
+      <img src="media/pencilMeister.png" alt="PencilMeister Game Screenshot" style="width:100%">
+      <p>Story-based adventure game created with Gamestar Mechanic that won the Scholastic What's Your Story? Best Original Narrative award</p>
+    </div>
+  </div>
+  
+        <!-- Modal -->
+<div class="modal fade" id="pencilModal" tabindex="-1" role="dialog" aria-labelledby="pencilModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pencilModalLabel">The PencilMeister</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_478022"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_478022']); _gsm.push(['_game_id', '478022']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_1106045.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837885861&Signature=lf1C4sQ9H9eSIIPKspQRND76uJw%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div><br> 
+		  <a href="http://gamestarmechanic.com/game/shared/478023/784ec45269b3226b80458e8301264455" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2014 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <div class="column games fiction">
+    <div class="content" data-toggle="modal" data-target="#caelaModal">
+       <h4>Outcast of Caela</h4>
+      <img src="media/caela.png" alt="Outcast of Caela Game Screenshot" style="width:100%">
+      <p>Story-based adventure game created with Gamestar Mechanic that won a national silver medal in the Scholastic Art and Writing Awards</p>
+    </div>
+  </div>
+  
+          <!-- Modal -->
+<div class="modal fade" id="caelaModal" tabindex="-1" role="dialog" aria-labelledby="caelaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="caelaModalLabel">Outcast of Caela</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_478024"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_478024']); _gsm.push(['_game_id', '478024']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_431412.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837886011&Signature=aQAUumA3aHrH8jS1B3N%2BqDOTHh4%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div><br> 
+		  <a href="http://gamestarmechanic.com/game/shared/478025/5fbe87d9d584ee0c2589f0c605509c5d" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2013 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <div class="column games">
+    <div class="content" data-toggle="modal" data-target="#strandedModal">
+     <h4>Stranded</h4>
+      <img src="media/stranded.PNG" alt="Stranded Game Screenshot" style="width:100%">
+      <p>Puzzle adventure game created with Gamestar Mechanic. Pioneered a dialogue system that became popular on the platform.</p>
+    </div>
+  </div>
+  
+           <!-- Modal -->
+<div class="modal fade" id="strandedModal" tabindex="-1" role="dialog" aria-labelledby="strandedModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="strandedModalLabel">Stranded</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_478027"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_478027']); _gsm.push(['_game_id', '478027']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_1404277.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837886095&Signature=WPZVAiQxje0AzAmz%2F8kjC3GQ3Mw%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div><br> 
+		  <a href="http://gamestarmechanic.com/game/shared/478028/b9e27dbb10396e9d6c5125f48a836212" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2014 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <div class="column games">
+    <div class="content" data-toggle="modal" data-target="#missingModal">
+     <h4>Missing!</h4>
+      <img src="media/missing.png" alt="Car" style="width:100%">
+      <p>Puzzle mystery game created with Gamestar Mechanic. Pioneered a dialogue system that became popular on the site.</p>
+    </div>
+  </div>
+  
+            <!-- Modal -->
+<div class="modal fade" id="missingModal" tabindex="-1" role="dialog" aria-labelledby="missingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="missingModalLabel">Missing!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_478029"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_478029']); _gsm.push(['_game_id', '478029']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_197893.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837886200&Signature=Pbyi08QmsigAsKINPDEgU9mrD48%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div><br> 
+		  <a href="http://gamestarmechanic.com/game/shared/478030/4c6eb4102689fa22548e5b7732548461" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2012 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="column games educational">
+    <div class="content" data-toggle="modal" data-target="#graphitModal">
+     <h4>Graph It: Treasure Hunt</h4>
+      <img src="media/graphIt.png" alt="People" style="width:100%">
+      <p>Educational game created with Gamestar Mechanic</p>
+    </div>
+  </div>
+  
+            <!-- Modal -->
+<div class="modal fade" id="graphitModal" tabindex="-1" role="dialog" aria-labelledby="graphitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="graphitModalLabel">Graph It: Treasure Hunt</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <div id="gsm_478031"><script type="text/javascript">var _gsm = _gsm || []; _gsm.push(['_node_id', 'gsm_478031']); _gsm.push(['_game_id', '478031']); _gsm.push(['_dynamic_url', 'gamestarmechanic.com/xml/get/']); _gsm.push(['_base_url', 'gamestarmechanic.com']); _gsm.push(['_info_url', 'images.gamestarmechanic.com/embed_info_game_1870946.txt?AWSAccessKeyId=AKIAJPMGIXOIYXBVKVWQ&Expires=1837886298&Signature=fMXL%2FKCLuYaaYbkVxg1lw0k7iqU%3D']);(function(){var embedUrl_http = 'http://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl_https = 'https://gamestarmechanic.com/embed/embed_game_fast.js'; var embedUrl = ('https:' == document.location.protocol ? embedUrl_https : embedUrl_http); var gsm = document.createElement('script'); gsm.type = 'text/javascript'; gsm.src = embedUrl; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gsm, s);})(); </script></div><br> 
+		  <a href="http://gamestarmechanic.com/game/shared/478032/6d6afeeb6f7073808c123c68274a2df3" target="_blank">Can't play the game? Click here to open in a new tab.</a> <br> 
+    		  Date: 2013 <br> 
+    		  Role: Individual project  
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games educational">
+    <div class="content" data-toggle="modal" data-target="#colorclashModal">
+     <h4>Color Clash</h4>
+      <img src="media/colorClash.png" alt="Color Clash Game Screenshot" style="width:100%">
+      <p>Educational game that teaches about primary and secondary colors.</p>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="colorclashModal" tabindex="-1" role="dialog" aria-labelledby="colorclashModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="colorclashModalLabel">Color Clash</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p> <embed src="media/colorClash.swf" width="100%" height="500"> <br>  
+			  <!-- <iframe src="colorClash/colorClash.html" style="border:0px #000000 none;" name="soundscape" scrolling="no" frameborder="1" marginheight="px" marginwidth="550px" height="320px" width="550px"></iframe> --> 
+    		  Date: Fall 2016 <br> 
+    		  Role: Programming 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column games fiction">
+    <div class="content" data-toggle="modal" data-target="#cloakModal">
+     <h4>The Castle and the Cloak</h4>
+      <img src="media/comic.png" alt="People" style="width:100%">
+      <p>Interactive comic</p>
+    </div>
+  </div>
+  
+    <!-- Modal -->
+<div class="modal fade" id="cloakModal" tabindex="-1" role="dialog" aria-labelledby="cloakModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cloakModalLabel">The Castle and the Cloak</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <iframe src="comic/The Castle and the Cloak.html" style="border:0px #000000 none;" name="soundscape" scrolling="no" frameborder="1" marginheight="px" marginwidth="550px" height="320px" width="550px"></iframe>
+		  <p>
+    		  Date: Fall 2017 <br> 
+    		  Role: Individual project
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="column music">
+    <div class="content" data-toggle="modal" data-target="#awakeningModal">
+      <h4>Awakening</h4>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422933448%3Fsecret_token%3Ds-d6NsU&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <p>Video game score style track</p>
+    </div>
+  </div>
+  
+  <div class="column music">
+    <div class="content" data-toggle="modal" data-target="#discoveryModal">
+     <h4>Discovery</h4>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422934351%3Fsecret_token%3Ds-nQA9w&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <p>Video game score style track</p>
+    </div>
+  </div>
+  
+  <div class="column music">
+    <div class="content" data-toggle="modal" data-target="#riversongModal">
+     <h4>Riversong</h4>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422934654%3Fsecret_token%3Ds-rHVcL&color=%2300cc11&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <p>Piano solo</p>
+    </div>
+  </div>
+  
+  <div class="column music">
+    <div class="content" data-toggle="modal" data-target="#arcticModal">
+     <h4>Arctic Rose</h4>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422935026%3Fsecret_token%3Ds-FYbd8&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <p>Piano / classical guitar duet co-written with my sister</p>
+    </div>
+  </div>
+  
+  <div class="column music">
+    <div class="content" data-toggle="modal" data-target="#mistyModal">
+      <h4>Misty Morning</h4>
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422935170%3Fsecret_token%3Ds-1qDpP&color=%23ff9900&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <p>Piano solo</p>
+    </div>
+  </div>
+  
+  <div class="column film">
+    <div class="content" data-toggle="modal" data-target="#earlybirdModal">
+     <h4>Early Bird</h4>
+      <img src="media/earlyBird.png" alt="People" style="width:100%">
+      <p>Comedy film about a young professional's mishaps on the way to work.</p>
+    </div>
+  </div>
+  
+             <!-- Modal -->
+<div class="modal fade" id="earlybirdModal" tabindex="-1" role="dialog" aria-labelledby="earlybirdModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="earlybirdModalLabel">Early Bird</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		  <p>  <iframe src="https://drive.google.com/file/d/1n4yczp0yn8r_xEQLs-kJibeMG9fsjRsC/preview" width="640" height="480"></iframe>
+    		  Date: 2015 <br> 
+    		  Role: Director, writer 
+     		  
+      	  </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	 
+<!-- END GRID -->
+</div>
+	  </div>
+	  <script src="js/portfolio.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
