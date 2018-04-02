@@ -6,7 +6,11 @@ body {
 	/* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
 }
 
-html,body { height:100%; }
+html,body { 
+	height:100%; 
+	max-width: 100%;
+    overflow-x: hidden;
+}
 
 * {
     box-sizing: border-box;
